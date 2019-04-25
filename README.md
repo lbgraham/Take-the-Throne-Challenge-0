@@ -3,35 +3,27 @@ Seven Teams of 2 Battle for the crown! Targaryen, Stark, Lannister, Greyjoy Tull
 
 This weeks teams
 
-Targaryen
-//////////////////////////////////////
-
+Targaryen -
 Brandon Yu, Lee Graham (2)
 
-Stark
-//////////////////////////////////
+Stark -
 Yi Sun, Melissa Aybar (2)
 
-Lannister
-/////////////////////////////////
+Lannister -
 Theo Anderson, Grant Steinke (2)
 
-Greyjoy
-//////////////////////////////
+Greyjoy -
 Tri, Vzhamilton (2)
 
-Tully
-//////////////////////////////
+Tully -
 Brian Nelson, Matthew Yee (2)
 
 Bolton
-//////////////////////////////
 Candy Wang, Trevor Cannon (2)
 
-Tyrell
-//////////////////////////////
+Tyrell -
 Charles Neblett, Nawa Subedi (2)
 
-//////////////////////////////
+
 Challenge is due by lunch time Friday May 3rd! 
 Prepare to chat for 5 minutes to talk about how you and your team solved this challenge!

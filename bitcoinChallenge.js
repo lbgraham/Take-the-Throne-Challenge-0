@@ -8029,4 +8029,63 @@ var bitcoinData = [
   "fees": 16.08550077,
   "activeAddresses": null
 }
-]
+];
+
+
+// 1) First, let's log the bitcoinData object to investigate the structure of our data.
+
+// console.log(bitcoinData);
+
+// 2) What is the data type of bitcoinData? Let’s say we just 
+// want to look at bitcoin information on May 1st, 2013. How can we do that?
+
+// bitcoinData is an array of objects
+console.log(bitcoinData.filter(x => x.date === '2013-05-01'));
+
+// 3) Let’s say we want to create an array containing only the date and price of 
+// each day. Use the built-in map method to create an array containing that information.
+
+var resultsArr = [];
+bitcoinData.forEach(val => resultsArr.push([val.date, val['price(USD)']]));
+
+// 4) Let’s create an array that only includes days when exchange volume was not 0. 
+// Which method should we use?
+
+var hasVolume = bitcoinData.filter((indexVolume) => indexVolume['txVolume(USD)'] > 0);
+
+// 5) Everyday, new Bitcoins are generated. If we want to find out how many were 
+// generated all together during the time that’s provided in the dataset, can you 
+// figure out how to calculate it using reduce?
+
+var generatedCoins = bitcoinData.reduce((acc, val) => {
+  return acc + val.generatedCoins;
+}, 0);
+
+// 6) Bitcoin price fluctuates a lot. Let’s combine some array methods to find the total number of 
+// days when bitcoin price was over $100!
+
+var resultPrice100Plus = bitcoinData.reduce((acc, val, idx, array) => {
+  if(array[idx]['price(USD)'] > 100) {
+    acc++;
+  }
+
+  return acc;
+}, 0);
+
+// 7) And finally, let’s find the average bitcoin transaction fees between 2013 and 2015. 
+// Be sure to floor this value.
+
+var averagePrice = Math.floor(bitcoinData.reduce((acc, val, idx) => { 
+   return acc + val.fees / bitcoinData.length;
+}, 0));
+
+// console.log(resultsArr);
+
+// console.log(hasVolume.length);
+
+// console.log(generatedCoins);
+
+// console.log(resultPrice100Plus);
+
+// console.log(averagePrice);
+
